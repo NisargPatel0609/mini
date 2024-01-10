@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.5/axios.min.js"></script>
+  <script defer src="../assets/scripts/element-details.js"></script>
+  <link rel="stylesheet" href="../assets/styles/element-details.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,800;1,600&display=swap"
+    rel="stylesheet" />
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+</head>
+
+<body>
+  <main id="element-details_main">
+    <div class="element-details_container">
+      <div class="left-div">
+        <div class="div1">
+          <div class="element-details_symbol-div element">
+            <div id="element-details_symbol" class="element-details_symbol"></div>
+            <div class="element-details_number" id="element-details_number"></div>
+          </div>
+
+          <div class="element-details_category-div element">
+            <p class="small-font">Category</p>
+            <div class="element-details_category medium-font" id="element-details_category"></div>
+          </div>
+
+          <div class="element-details_discoveredby-div element">
+            <p class="small-font">Discovered By</p>
+            <div class="element-details_discoveredby medium-font" id="element-details_discoveredby"></div>
+          </div>
+
+          <div class="element-details_namedby-div element">
+            <p class="small-font">Named By</p>
+            <div id="element-details_namedby" class="element-details_namedby medium-font"></div>
+          </div>
+        </div>
+
+        <div class="div2">
+          <div id="element-details_name" class="element-details_name element large-font"></div>
+          <div class="element-details_weight-div">
+            <div class="element-details_atomicMass element">
+              <p class="small-font">Atomic Mass</p>
+              <div id="element-details_atomicMass-content" class="element-details_atomicMass-content medium-font"></div>
+            </div>
+            <div class="element-details_density element">
+              <p class="small-font">Density</p>
+              <div id="element-details_density-content" class="element-details_density-content medium-font"></div>
+            </div>
+          </div>
+          <div class="element-details_3d element">
+            <model-viewer class="model element-details_3d-model" alt="laptop" id="element-details_3d-model" src=""
+              shadow-intensity="0" camera-controls touch-action="pan-y" camera-orbit="-45deg 65deg 1.5m"
+              poster="images/showcaseImage.svg"
+              environment-image="https://unsplash.com/photos/a-rusted-out-car-sitting-in-a-field-of-flowers-XoSzdzO2bJo"
+              exposure="5" autoplay auto-rotate disable-zoom></model-viewer>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-div">
+        <div class="div3">
+          <div class="element-details_image-div">
+            <img id="element-details_image" src="" alt="" />
+          </div>
+          <div class="element-details_details">
+            <div id="element-details_description" class="element-details_description element"></div>
+            <div class="element-electorn">
+              <div class="element-details_electronConfiguration element">
+                <p class="small-font">Electron Configuration</p>
+                <div id="element-details_electornConfiguration-content"
+                  class="element-details_electornConfiguration-content medium-font"></div>
+              </div>
+              <div class="element-details_more-details" id="element-details_more-details">
+                <button>
+                  <a id="element-details_more-details_link" href="">More Details</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

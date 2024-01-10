@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.5/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script defer src="../assets/scripts/main.js"></script>
+    <title>periodic Table Explorer</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav_logo">
+        <a href="./">
+          <h1>PERIODIC TABLE EXPLORER</h1>
+        </a>
+      </div>
+
+      <div id="nav_links" class="nav_links">
+        <ul>
+          <li><a href="./">Chemistry</a></li>
+          <li><a href="./geography.html">Geography</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="hamburger" id="hamburger">
+        <button onclick="onHamburgerClick()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-align-justify"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <div class="close" id="close">
+        <button onclick="onHamburgerClick()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </button>
+      </div>
+
+      <div id="slider" class="slider slide-left">
+        <ul>
+          <li><a href="./">Chemistry</a></li>
+          <li><a href="./geography.html">Geography</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main id="main">
+      <div class="main_heading">
+        <h1>PERIODIC TABLE</h1>
+      </div>
+      <div id="periodic_table" class="periodic_table">
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer_information">
+        <div class="footer_logo">
+          <a href="./">
+            <h1>PERIODIC TABLE EXPLORER</h1>
+          </a>
+        </div>
+
+        
+        <div class="footer_links">
+          <h2>Navigation Links</h2>
+          <ul>
+            <li><a href="">Chemistry</a></li>
+            <li><a href="">Geography</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer_contact-details">
+          <h2>Contact Details</h2>
+          <ul>
+            <p>+91 9723959943</p>
+            <p>+91 9033032445</p>
+            <p>patelnisarg3375@gmail.com</p>
+            <p>B-501, pushp residency, ghodasar, Ahmedabad, 380050</p>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer_line"></div>
+
+      <div class="copy_right">
+        <p>© Copyright 2022 Periodic Table Explorer. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
